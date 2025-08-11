@@ -18,7 +18,7 @@ object RetrofitClient {
                 .create(Apiservice::class.java)
 
         }
-        public static List<T> retrofit<T>(DataTable dt)
+        public static List<T> retrofit<T>(Retrofit dt)
         {
             var columnNames = dt.Columns.Cast<DataColumn>().Select(c => c.ColumnName.ToLower()).ToList();
             var properties = typeof(T).GetProperties();
@@ -59,4 +59,5 @@ object RetrofitClient {
     }
 
 }
+
 
