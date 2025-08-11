@@ -39,8 +39,8 @@ object RetrofitClient {
             }).ToList();
         }
         @FormUrlEncoded
-        @POST("api/Registration")
-        fun insertRegisterUser(@FieldMap param:HashMap<String?,String?>): Call<RegistraionModel>
+        @POST("api/RetrofitModel")
+        fun insertRegisterUser(@FieldMap param:HashMap<String?,String?>): Call<RetrofitModel>
 
     public class RetrofitResponse
     {
@@ -59,5 +59,6 @@ object RetrofitClient {
     }
 
 }
+
 
 
